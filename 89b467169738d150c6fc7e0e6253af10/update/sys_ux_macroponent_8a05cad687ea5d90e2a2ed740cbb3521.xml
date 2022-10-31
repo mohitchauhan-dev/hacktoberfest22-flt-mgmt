@@ -114,12 +114,106 @@
           "isNonDestructive" : false,
           "items" : [ ],
           "styles" : { }
+        }, {
+          "elementId" : "button_1",
+          "elementLabel" : "Button 1",
+          "propertyValues" : {
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "variant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "primary"
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "activity-fill"
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Create Maintenance Request",
+                "comment" : ""
+              }
+            },
+            "tooltipContent" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Enter a label",
+                "comment" : ""
+              }
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "cljjwfddgbgaadddiiddbhhvggekbzaggcc",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_snc_flt_mgmt.MODAL_SELECTED_RELAY_8a05cad687ea5d90e2a2ed740cbb3521",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "modalId" : "[component-id$='maint_req']",
+                    "showModal" : true,
+                    "displayOptions" : null,
+                    "bare" : true,
+                    "viewportElementId" : null,
+                    "viewportRoute" : null,
+                    "viewportFields" : null
+                  }
+                },
+                "sysId" : "deaabd72477e515047516ac2e36d43af"
+              },
+              "operation" : null,
+              "targetId" : "cljjwfddgbgaadddjjddbhhvzjbbjrmqx",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : null,
+          "definition" : {
+            "id" : "d37ce8abca89d02905fed903c8e34d8e",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : { }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"element_id":"stylized_text_1","styles":{}}],
+            "items" : [{"element_id":"stylized_text_1","styles":{}},{"element_id":"button_1","styles":{}}],
             "root" : null,
             "rules" : null,
             "styles" : {"flex-direction":"column","align-items":"flex-start","justify-content":"center","margin":"var(--now-static-space--lg)"},
@@ -2082,11 +2176,282 @@
   "styles" : {
     "width" : "100%"
   }
+}, {
+  "elementId" : "maint_req",
+  "elementLabel" : "Maintenance Request",
+  "propertyValues" : {
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "disableDismiss" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "bare" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "cljjwfcchhvfaaddcyddbhhvzggxclhzii",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf_page.CANVAS_MODAL#CLOSED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf_page.CANVAS_MODAL#CLOSED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "x_snc_flt_mgmt.MODAL_SELECTED_RELAY_8a05cad687ea5d90e2a2ed740cbb3521",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "modalId" : "[component-id$='maint_req']",
+            "showModal" : false,
+            "displayOptions" : null,
+            "bare" : true,
+            "viewportElementId" : null,
+            "viewportRoute" : null,
+            "viewportFields" : null
+          }
+        },
+        "sysId" : "deaabd72477e515047516ac2e36d43af"
+      },
+      "operation" : null,
+      "targetId" : "cljjwfcchhvfaaddczddbhhvpzkuaqoff",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "slot" : null,
+  "definition" : {
+    "id" : "9c2e3b0978b3250ef3081204f151026a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "body_1",
+      "elementLabel" : "Body 1",
+      "propertyValues" : {
+        "ariaRegionHeadingLevel" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "ariaRegionName" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "",
+            "comment" : ""
+          }
+        },
+        "includeAriaHeading" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "type" : {
+          "type" : "JSON_LITERAL",
+          "value" : "section"
+        },
+        "ariaRole" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "catalog_item_1",
+          "elementLabel" : "Catalog Item 1",
+          "propertyValues" : {
+            "showRequestForHeader" : {
+              "type" : "JSON_LITERAL",
+              "value" : "true"
+            },
+            "propagateNotifications" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "sysId" : {
+              "type" : "JSON_LITERAL",
+              "value" : "3d3bb40d97ba1110dd0178300153afd0"
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "",
+                "comment" : ""
+              }
+            },
+            "headingOnlyVisibleToScreenReaders" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "interceptNotifications" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideOptionsLabel" : {
+              "type" : "JSON_LITERAL",
+              "value" : "false"
+            },
+            "referrer" : {
+              "type" : "JSON_LITERAL",
+              "value" : "default"
+            },
+            "submitPosition" : {
+              "type" : "JSON_LITERAL",
+              "value" : "right"
+            },
+            "headerLevel" : {
+              "type" : "JSON_LITERAL",
+              "value" : "1"
+            },
+            "engagementChannel" : {
+              "type" : "JSON_LITERAL",
+              "value" : "default"
+            },
+            "requestedForId" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "bare" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "scrollable" : {
+              "type" : "JSON_LITERAL",
+              "value" : "y"
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "cljjwfeejohaadddwddbhhvsffbbpcbra",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_sc_record_form.SN_CATALOG_FORM_CONNECTED#REQUEST_GENERATED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_sc_record_form.SN_CATALOG_FORM_CONNECTED#REQUEST_GENERATED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_snc_flt_mgmt.MODAL_SELECTED_RELAY_8a05cad687ea5d90e2a2ed740cbb3521",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "modalId" : "[component-id$='maint_req']",
+                    "showModal" : null,
+                    "displayOptions" : null,
+                    "bare" : true,
+                    "viewportElementId" : null,
+                    "viewportRoute" : null,
+                    "viewportFields" : null
+                  }
+                },
+                "sysId" : "deaabd72477e515047516ac2e36d43af"
+              },
+              "operation" : null,
+              "targetId" : "cljjwfeejohaadddxddbhhvaawccshhxuq",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : null,
+          "definition" : {
+            "id" : "afeef20635001010f877265d86f080df",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "isInline" : null,
+            "items" : [{"element_id":"catalog_item_1","styles":{}}],
+            "root" : null,
+            "rules" : null,
+            "styles" : {"flex-direction":"column"},
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "flex"
+          },
+          "version" : "3.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : {
+        "width" : "100%"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "isInline" : null,
+        "items" : [{"element_id":"body_1","rules":null,"styles":{"display":"flex","flex-direction":"column","flex-grow":1.5}}],
+        "root" : null,
+        "rules" : null,
+        "styles" : {"flex-direction":"column","gap":"var(--now-static-space--lg)"},
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      },
+      "version" : "3.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : {
+    "width" : "100%"
+  }
 } ]</composition>
         <da_relay_models/>
         <data>[ ]</data>
         <description/>
-        <dispatched_events>c0034b1a872a1110e2a2ed740cbb35ec,4643b35250381910cf73d45596025dbe</dispatched_events>
+        <dispatched_events>deaabd72477e515047516ac2e36d43af,c0034b1a872a1110e2a2ed740cbb35ec,4643b35250381910cf73d45596025dbe</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <handled_events/>
@@ -2120,6 +2485,12 @@
   "message" : "All Maintenance Tasks",
   "comment" : ""
 }, {
+  "message" : "Create Maintenance Request",
+  "comment" : ""
+}, {
+  "message" : "Enter a label",
+  "comment" : ""
+}, {
   "message" : "Maint req",
   "comment" : ""
 }, {
@@ -2141,13 +2512,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-17 07:58:45</sys_created_on>
         <sys_id>8a05cad687ea5d90e2a2ed740cbb3521</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Home default Copy</sys_name>
         <sys_package display_value="Fleet Vehicle Management" source="x_snc_flt_mgmt">89b467169738d150c6fc7e0e6253af10</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</sys_scope>
         <sys_update_name>sys_ux_macroponent_8a05cad687ea5d90e2a2ed740cbb3521</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-19 12:30:33</sys_updated_on>
+        <sys_updated_on>2022-10-31 06:47:22</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
