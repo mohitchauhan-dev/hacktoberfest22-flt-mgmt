@@ -242,7 +242,10 @@
           "type" : "JSON_LITERAL",
           "value" : null
         },
-        "defaultRoute" : null,
+        "defaultRoute" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
         "selectedTabIndex" : {
           "type" : "CONTEXT_BINDING",
           "binding" : {
@@ -287,13 +290,13 @@
           "type" : "JSON_LITERAL",
           "value" : "md"
         },
-        "position" : {
-          "type" : "JSON_LITERAL",
-          "value" : "top"
-        },
         "showInlinePadding" : {
           "type" : "JSON_LITERAL",
           "value" : true
+        },
+        "position" : {
+          "type" : "JSON_LITERAL",
+          "value" : "top"
         },
         "items" : {
           "type" : "LIST_CONTAINER",
@@ -828,13 +831,13 @@
                     "category" : "value"
                   }
                 },
-                "hidePreviousPage" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
                 "maxColumns" : {
                   "type" : "JSON_LITERAL",
                   "value" : 0
+                },
+                "hidePreviousPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
                 },
                 "view" : {
                   "type" : "CONTEXT_BINDING",
@@ -1290,13 +1293,13 @@
           "type" : "JSON_LITERAL",
           "value" : "md"
         },
-        "position" : {
-          "type" : "JSON_LITERAL",
-          "value" : "right"
-        },
         "showInlinePadding" : {
           "type" : "JSON_LITERAL",
           "value" : true
+        },
+        "position" : {
+          "type" : "JSON_LITERAL",
+          "value" : "right"
         },
         "items" : {
           "type" : "LIST_CONTAINER",
@@ -3845,13 +3848,13 @@
   "disabled" : false
 }, {
   "name" : "table",
-  "label" : "Table",
+  "label" : "table",
   "fieldType" : null,
   "typeMetadata" : null,
   "valueType" : null,
   "mandatory" : true,
   "defaultValue" : null,
-  "description" : null,
+  "description" : "",
   "readOnly" : false,
   "selectable" : false,
   "disabled" : false
@@ -3863,7 +3866,7 @@
   "valueType" : null,
   "mandatory" : true,
   "defaultValue" : null,
-  "description" : null,
+  "description" : "",
   "readOnly" : false,
   "selectable" : false,
   "disabled" : false
@@ -3976,4 +3979,5 @@
         <sys_scope display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</sys_scope>
         <sys_update_name>sys_ux_macroponent_f2fa4a0887ee1190e2a2ed740cbb355d</sys_update_name>
     </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=f2fa4a0887ee1190e2a2ed740cbb355d"/>
 </record_update>
