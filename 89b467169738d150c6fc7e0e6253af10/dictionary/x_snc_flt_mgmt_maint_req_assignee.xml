@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="729a906c8793111089790fe5dabb35ad" label="Maint req assignee" max_length="40" name="x_snc_flt_mgmt_maint_req_assignee" type="collection">
+        <element label="Maint Req" mandatory="true" max_length="32" name="maint_req" reference="x_snc_flt_mgmt_maint_req" type="reference"/>
+        <element label="User" mandatory="true" max_length="32" name="sys_user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="maint_req"/>
+        </index>
+        <index name="index2">
+            <element name="sys_user"/>
+        </index>
+    </element>
+</database>

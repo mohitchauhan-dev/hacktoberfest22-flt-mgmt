@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Maintenance Request default">e604a02487d3111089790fe5dabb3597</macroponent>
+        <name>Refresh Assignees</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    api.data.look_up_assignees.refresh();
+    api.setState("assigneeRefreshRequested", Date.now());
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-11-17 21:54:45</sys_created_on>
+        <sys_id>e2ade02c87d3111089790fe5dabb3576</sys_id>
+        <sys_name>Refresh Assignees</sys_name>
+        <sys_package display_value="Fleet Vehicle Management" source="x_snc_flt_mgmt">89b467169738d150c6fc7e0e6253af10</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</sys_scope>
+        <sys_update_name>sys_ux_client_script_e2ade02c87d3111089790fe5dabb3576</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

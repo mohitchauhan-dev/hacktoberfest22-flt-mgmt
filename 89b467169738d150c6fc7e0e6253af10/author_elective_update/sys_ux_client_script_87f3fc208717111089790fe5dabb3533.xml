@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Maintenance Request default">e604a02487d3111089790fe5dabb3597</macroponent>
+        <name>New client script 1</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-11-17 22:22:22</sys_created_on>
+        <sys_id>87f3fc208717111089790fe5dabb3533</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="Fleet Vehicle Management" source="x_snc_flt_mgmt">89b467169738d150c6fc7e0e6253af10</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</sys_scope>
+        <sys_update_name>sys_ux_client_script_87f3fc208717111089790fe5dabb3533</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-11-17 22:22:22</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>sys_ux_client_script_87f3fc208717111089790fe5dabb3533</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Maintenance Request default"&gt;e604a02487d3111089790fe5dabb3597&lt;/macroponent&gt;&lt;name&gt;New client script 1&lt;/name&gt;&lt;preset/&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jon.lind&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-17 22:22:22&lt;/sys_created_on&gt;&lt;sys_id&gt;87f3fc208717111089790fe5dabb3533&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;New client script 1&lt;/sys_name&gt;&lt;sys_package display_value="Fleet Vehicle Management" source="x_snc_flt_mgmt"&gt;89b467169738d150c6fc7e0e6253af10&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Fleet Vehicle Management"&gt;89b467169738d150c6fc7e0e6253af10&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_87f3fc208717111089790fe5dabb3533&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jon.lind&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-17 22:22:22&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1395056767</payload_hash>
+        <record_name>New client script 1</record_name>
+        <reverted_from/>
+        <source>08d06d1a47d29510552caf52736d4308</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-11-17 22:22:23</sys_created_on>
+        <sys_id>4ff370608717111089790fe5dabb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18487af9a5a0000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-11-17 22:22:23</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>4ff3fc20a7171110207a38ce3fa6dc35</update_guid>
+        <update_guid_history>4ff3fc20a7171110207a38ce3fa6dc35:-1395056767</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-11-17 22:22:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0e09acbdaee347689208ee4fbb57be40</sys_id>
+        <sys_metadata>87f3fc208717111089790fe5dabb3533</sys_metadata>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="Fleet Vehicle Management" source="x_snc_flt_mgmt">89b467169738d150c6fc7e0e6253af10</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</sys_scope>
+        <sys_scope_delete display_value="">103cf2a4751b4197883305011e105169</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_87f3fc208717111089790fe5dabb3533</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_87f3fc208717111089790fe5dabb3533">4ff370608717111089790fe5dabb35d5</sys_update_version>
+    </sys_metadata_delete>
+</record_update>
